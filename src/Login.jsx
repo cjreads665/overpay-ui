@@ -1,15 +1,10 @@
 import React from 'react'
 import LoginForm from './Forms/LoginForm'
-import Logo from './images/logo.png'
 import { Link } from 'react-router-dom'
 const Login = () => {
   return (
-    <div className='overflow-hidden p-1'>
-         <header>
-    <img src={Logo} alt="overpay-logo" />
-   </header>
-   <div>
-
+    <div className='flex flex-col justify-center items-center h-screen'>
+   <div className=' flex flex-col justify-around'>
      <section>
      <h1>Sign in to Overpay</h1>
      <h6>Send, spend and save smarter</h6>

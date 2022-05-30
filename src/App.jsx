@@ -4,16 +4,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './Login';
 import NoPage from './NoPage';
 import SignUp from './SignUp';
+import Navbar from './Header/Navbar';
 function App() {
   return (
+    <div className="App min-h-screen p-4 overflow-hidden font-['Manrope']">
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />}>
-          <Route path="signup" element={<SignUp />} />
-        </Route>
-        <Route path="*" element={<NoPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<Login/>} />
+      <Route path='signup' element={<SignUp/>} />
+    </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
