@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 const Verification = () => {
   return (
     <div className="flex justify-center flex-col items-center h-[80vh]">
@@ -47,9 +48,7 @@ const Verification = () => {
         />
       </div>
       <Link to='/profile'>
-      <button className='text-white bg-[#194BFB] py-3 px-10 rounded-lg font-[800] tracking-[0.2px] capitalize '>
-        <span className='text-sm tracking-wider'>Verify Account</span>
-    </button>
+      <Button name='submit' />
       </Link>
     <section><p>Resend code in 59:00</p></section>
     </div>

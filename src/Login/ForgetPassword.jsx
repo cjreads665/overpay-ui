@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Button'
 
 const ForgetPassword = () => {
   return (
@@ -9,7 +10,7 @@ const ForgetPassword = () => {
         <p>Enter the email address associated with your account and we will send you a link to reset your password.</p>
       </div>
       <input type="email" name="email" id="email" className='h-12 rounded-lg border border-1 border-slate-700 w-full p-2'/>
-      <button className='w-full text-white bg-[#194BFB] px-1.5 py-3 rounded font-[800] tracking-[0.2px] capitalize' >Submit</button>
+      <Button name='submit'/>
       <p>Forgot your email?</p>
         </div>
         

@@ -1,10 +1,18 @@
 import React from 'react'
+import Button from '../Button'
+import { useLocation,Link } from 'react-router-dom';
 
 const SignInBtn = () => {
+  const location = useLocation(); 
+  let name
+  location.pathname=='/profile' ? name = 'log out' : name= 'sign in'
   return (
-    <button className='text-white bg-[#194BFB] py-3 px-10 rounded-lg font-[800] tracking-[0.2px] capitalize lg:mr-12 mr-4'>
-        <span className='text-sm tracking-wider'>Sign In</span>
-    </button>
+    <Link to='/'>
+    <div className='mr-4'>
+    <Button name={name}/>
+    </div>
+    </Link>
+    
   )
 }
 
