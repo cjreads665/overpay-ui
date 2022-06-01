@@ -12,12 +12,12 @@ const LoginForm = () => {
     setFlag(!flag)
     pass.type=='text'? pass.type='password' : pass.type='text'
   }
-  console.log(email.split(''))
+  console.log(email.split())
   return (
     <form action="" className='flex flex-col justify-around h-[50%]'>
-        <input type="email" name="username" id="username" pattern="\S(.*\S)?" title="This field is required" placeholder='Username or email' required className={inputStyles} />
+        <input type="email" name="username" id="username" placeholder='Username or email' required className={inputStyles} />
         <div className='flex relative'>
-        <input type="password" name="pasword" id="password" pattern="\S(.*\S)?"  placeholder='Password' required className={inputStyles} value={password} onChange={(e)=>setPassword(e.target.value)} />
+        <input type="password" name="pasword" id="password" placeholder='Password' required className={inputStyles} value={password} onChange={(e)=>setPassword(e.target.value)} />
         <button onClick={(e)=>handleClick(e)} className='absolute right-3 bottom-4' >{flag? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
   <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/>
   <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/>
@@ -36,11 +36,15 @@ const LoginForm = () => {
             <span className='text-sky-600'>Forgot Password?</span>
             </Link>
         </div>
-        <ConditionalLink to="/verification" condition={password!=='' && email!==''}>
+        <ConditionalLink to="/verification" condition={password!=='' || email!==''}>
         <button type="submit"
         className='w-full text-white bg-[#194BFB] px-1.5 py-3 rounded font-[800] tracking-[0.2px] capitalize'
         > Sign in</button>
         </ConditionalLink>
+       
+     
+       
+ 
     </form>
   )
 }
