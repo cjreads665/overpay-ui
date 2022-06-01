@@ -7,7 +7,7 @@ const Navbar = () => {
   const location = useLocation(); 
   let condition = location.pathname=='/' || location.pathname=='/signup'
   return (
-    <header className={`${condition? '' : 'bg-[#1A202C] absolute top-0 w-full left-0' }  flex items-center justify-between`} >
+    <header className={`${location.pathname=='/signup'? 'hidden' : ''} ${condition? '' : 'bg-[#1A202C] absolute top-0 w-full left-0' }  flex items-center justify-between`} >
     <Link to='/'>
     <img src={condition? Logo: test} alt="overpay-logo" className={`${condition? '':'w-28'} ml-4`} />
     </Link>

@@ -5,6 +5,7 @@ import LoginIntro from './LoginIntro'
 import illustraion from '../images/illustration.png'
 import GoogleBtn from '../GoogleBtn'
 import UseEmail from '../UseEmail'
+import Footer from '../Footer'
 const Login = () => {
   return (
     <div className='flex flex-col lg:flex-row-reverse lg:justify-around justify-center items-center h-[90vh]'>
@@ -15,6 +16,9 @@ const Login = () => {
     <UseEmail/>
     <LoginForm/>
      <p className='text-center'>Don’t have an account? <Link to='signup'> <span className='font-bold'>Sign Up</span></Link></p>
+   </div>
+   <div className='absolute bottom-4 w-[100%] lg:w-[60%] lg:left-12'>
+   <Footer/>
    </div>
     </div>
   )
