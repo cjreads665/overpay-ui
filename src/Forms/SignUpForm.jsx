@@ -1,4 +1,7 @@
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
+import Button from '../Button'
+import ConditionalLink from '../ConditionalLink'
 
 const SignUpForm = () => {
   let inputStyles='h-12 rounded-lg border w-full p-2 border border-1 border-[#dbdde0]'
@@ -18,10 +21,11 @@ const SignUpForm = () => {
         <input type="password" name="password" id="password" required className={inputStyles} placeholder='Password' onChange={(e)=>setPassword(e.target.value)} />
         <p> By creating an account, you agreeing to our <span className='font-bold'>Privacy Policy</span> , and <span className='font-bold'>Electronics Communication Policy</span>.</p>
        
-        <button type="submit"
-        className='w-full text-white bg-[#194BFB] px-1.5 py-3 rounded font-[800] tracking-[0.2px] capitalize'
-        >
-        Sign Up</button>
+        <ConditionalLink to="/verification"
+        condition={password !== "" && email !== "" && fname!=='' && lname!=='' }>
+        <Button name={'Sign Up'}/>
+        </ConditionalLink>
+        
     </form>
   )
 }
