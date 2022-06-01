@@ -7,6 +7,8 @@ import Navbar from './Header/Navbar';
 import Footer from './Footer';
 import SignUp from './SignUp/SignUp';
 import Verification from './Verification';
+import ForgetPassword from './Login/ForgetPassword';
+import Profile from './Profile';
 function App() {
   return (
     <div className="App min-h-screen tracking-[0.05rem] p-4 overflow-hidden font-['Manrope']">
@@ -16,6 +18,8 @@ function App() {
       <Route path='/' element={<Login/>} />
       <Route path='signup' element={<SignUp/>} />
       <Route path='verification' element={<Verification/>} />
+      <Route path='reset-password' element={<ForgetPassword/>} />
+      <Route path='profile' element={<Profile/>} />
     </Routes>
     
       </BrowserRouter>

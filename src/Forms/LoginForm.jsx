@@ -13,7 +13,9 @@ const LoginForm = () => {
                 <input type="checkbox" name="remember" id="remember" />
                 <label htmlFor="remember">Remember me</label>
             </span>
+            <Link to='/reset-password'>
             <span className='text-sky-600'>Forgot Password?</span>
+            </Link>
         </div>
         <Link to='verification'>
         <button type="submit"
