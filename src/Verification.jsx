@@ -1,7 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import Timer from "./Timer";
 const Verification = () => {
+  let min = 59
+  let sec=59
+  setInterval(() => {
+    if(min!==0){
+      if(sec==0){
+        min--
+      }
+    }
+  },1000);
   return (
     <div className="flex justify-center flex-col items-center h-[80vh]">
       <div>
@@ -50,7 +60,7 @@ const Verification = () => {
       <Link to='/profile'>
       <Button name='submit' />
       </Link>
-    <section><p>Resend code in 59:00</p></section>
+    <p className="flex"> Resend code in <Timer/></p>
     </div>
   );
 };
