@@ -11,37 +11,37 @@ const Verification = () => {
       </div>
       <div id="otp" class="flex justify-around text-center px-2 mt-5">
         <input
-          class="m-2 border h-10 w-10 text-center form-control rounded"
+          class="m-2  h-10 w-10 text-center form-control rounded border border-1 border-[#dbdde0]"
           type="text"
           id="first"
           maxlength="1"
         />
         <input
-          class="m-2 border h-10 w-10 text-center form-control rounded"
+          class="m-2  h-10 w-10 text-center form-control rounded border border-1 border-[#dbdde0]"
           type="text"
           id="second"
           maxlength="1"
         />
         <input
-          class="m-2 border h-10 w-10 text-center form-control rounded"
+          class="m-2  h-10 w-10 text-center form-control rounded border border-1 border-[#dbdde0]"
           type="text"
           id="third"
           maxlength="1"
         />
         <input
-          class="m-2 border h-10 w-10 text-center form-control rounded"
+          class="m-2  h-10 w-10 text-center form-control rounded border border-1 border-[#dbdde0]"
           type="text"
           id="fourth"
           maxlength="1"
         />
         <input
-          class="m-2 border h-10 w-10 text-center form-control rounded"
+          class="m-2  h-10 w-10 text-center form-control rounded border border-1 border-[#dbdde0]"
           type="text"
           id="fifth"
           maxlength="1"
         />
         <input
-          class="m-2 border h-10 w-10 text-center form-control rounded"
+          class="m-2  h-10 w-10 text-center form-control rounded border border-1 border-[#dbdde0]"
           type="text"
           id="sixth"
           maxlength="1"

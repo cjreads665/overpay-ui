@@ -13,7 +13,7 @@ const Login = () => {
      <LoginIntro/>
     <GoogleBtn name={'Sign In'}/>
     <UseEmail/>
-     <LoginForm/>
+    <LoginForm/>
      <p className='text-center'>Don’t have an account? <Link to='signup'> <span className='font-bold'>Sign Up</span></Link></p>
    </div>
     </div>

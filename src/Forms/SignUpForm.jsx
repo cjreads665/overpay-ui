@@ -1,10 +1,10 @@
 import React from 'react'
 
 const SignUpForm = () => {
-  let inputStyles='h-12 rounded-lg border w-full p-2'
+  let inputStyles='h-12 rounded-lg border w-full p-2 border border-1 border-[#dbdde0]'
   return (
-    <form action="" className='flex flex-col justify-around h-[50%]'>
-        <div className='flex'>
+    <form action="" className='flex flex-col justify-around h-[60%]'>
+        <div className='flex justify-between'>
             <input type="text" name="fname" id="fname" placeholder='First name' className={inputStyles} />
             <input type="text" name="lname" id="lname" placeholder='Last name' className={inputStyles} />
         </div>
