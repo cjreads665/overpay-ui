@@ -23,12 +23,11 @@ const Timer = () => {
             clearInterval(myInterval);
           };
     });
-
     return (
         <div className='ml-2'>
         { minutes === 0 && seconds === 0
             ? null
-            : <h1> {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</h1> 
+            : <span> {minutes}:{seconds < 10 ?  `0${seconds}` : seconds}</span> 
         }
         </div>
     )

@@ -17,7 +17,7 @@ const Login = () => {
     <LoginForm/>
      <p className='text-center'>Don’t have an account? <Link to='signup'> <span className='font-bold'>Sign Up</span></Link></p>
    </div>
-   <div className='absolute bottom-4 w-[100%] lg:w-[60%] lg:left-12'>
+   <div className='absolute bottom-2 w-[100%] lg:w-[60%] lg:left-12'>
    <Footer/>
    </div>
     </div>

@@ -1,10 +1,13 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import useStore from "./context/useStore";
 import Footer from "./Footer";
 import OtpField from "./OtpField";
 import Timer from "./Timer";
 const Verification = () => {
+  const {user} = useStore()
+  console.log(user);
   const [ minutes, setMinutes ] = useState(59);
   const [seconds, setSeconds ] =  useState(59);
   return (
@@ -12,7 +15,7 @@ const Verification = () => {
       <div>
         <h1 className="text-4xl font-[900] text-center">Verify your email</h1>
         <h5 className="text-[#718096] text-sm mt-2 text-center">We have sent code to your email</h5>
-        <h5 className="text-center">alesiaka******@mail.com</h5>
+        <p className="text-center">{user}</p>
       </div>
       <OtpField/>
       <div className="w-2/5 mt-2">
